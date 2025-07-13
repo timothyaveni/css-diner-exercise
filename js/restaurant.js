@@ -172,6 +172,24 @@ function addAnimation(el, className){
   })
 }
 
+async function saveProgressToServer() {
+// app.post("/save", express.json(), async (req, res) => {
+//   const data = req.body;
+//   await saveData(data);
+//   res.json({
+//     success: true,
+//   });
+// });
+
+  await fetch("/save", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(progress),
+  });
+}
+
 // Reset all progress
 // * Removes checkmarks from level header and list
 // * Scrolls level menu to top
@@ -181,6 +199,7 @@ function resetProgress(){
   currentLevel = 0;
   progress = blankProgress;
   localStorage.setItem("progress",JSON.stringify(progress));
+  saveProgressToServer();
   finished = false;
 
   $(".completed").removeClass("completed");
@@ -494,6 +513,7 @@ function trackProgress(levelNumber, type){
   }
 
   localStorage.setItem("progress",JSON.stringify(progress));
+  saveProgressToServer();
 }
 
 

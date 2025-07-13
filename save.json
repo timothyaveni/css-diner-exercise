@@ -1,0 +1,27 @@
+{
+  "totalCorrect": 4,
+  "percentComplete": 0.36363636363636365,
+  "lastPercentEvent": 0.30000000000000004,
+  "guessHistory": {
+    "0": {
+      "correct": true,
+      "incorrectCount": 0,
+      "gaSent": true
+    },
+    "1": {
+      "correct": true,
+      "incorrectCount": 0,
+      "gaSent": true
+    },
+    "2": {
+      "correct": true,
+      "incorrectCount": 2,
+      "gaSent": true
+    },
+    "3": {
+      "correct": true,
+      "incorrectCount": 1,
+      "gaSent": true
+    }
+  }
+}

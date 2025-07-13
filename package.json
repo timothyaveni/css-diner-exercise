@@ -1,0 +1,17 @@
+{
+  "name": "css-diner-exercise",
+  "version": "1.0.0",
+  "description": "CSS diner server for xuxi",
+  "main": "serve.ts",
+  "scripts": {
+    "start": "node --experimental-strip-types serve.ts"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^22"
+  },
+  "type": "module"
+}
