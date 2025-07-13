@@ -5,7 +5,7 @@ import fs from "node:fs/promises";
 const savePath = path.join(import.meta.dirname, "save.json");
 
 const app = express();
-const PORT = 80;
+const PORT = 8080;
 
 const saveData = async (data: any) => {
   await fs.writeFile(savePath, JSON.stringify(data, null, 2));
