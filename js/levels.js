@@ -682,4 +682,4 @@ var levelsExtra = [
   },
 ];
 
-var levels = [...levelsIntro];
+var levels = [...levelsExtra];
